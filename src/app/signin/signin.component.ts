@@ -9,6 +9,17 @@ export class SigninComponent implements OnInit {
 
   constructor() { }
 
+  username=""
+  password=""
+
+  readValues=()=>{
+let data={
+  "username":this.username,
+  "password":this.password
+}
+console.log(data)
+  }
+
   ngOnInit(): void {
   }
 
